@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examples of HTML Tables</title>
+    <style>
+        .header {
+            background-color: lightyellow;
+        }
+        .terrestrial {
+            background-color: lightcoral;
+        }
+        .gas {
+            background-color: lavender;
+        }
+        .ice {
+            background-color: lightskyblue;
+        }
+        .footer {
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Planets of Our Solar System</h1>
+    <table border="5">
+    <caption>The Planets in Our Solar System</caption>
+    <thead>
+        <tr class="header">
+            <th>Planet</th>
+            <th>Distance from Sun (million km)</th>
+            <th>Diameter (km)</th>
+            <th>Number of Moons</th>
+            <th>Type of Planet</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="terrestrial">
+            <td>Mercury</td>
+            <td>58</td>
+            <td>4,879</td>
+            <td rowspan="2">0</td>
+            <td rowspan="4">Terrestrial</td>
+        </tr>
+        <tr class="terrestrial">
+            <td>Venus</td>
+            <td>108</td>
+            <td>12,104</td>
+        </tr>
+        <tr class="terrestrial">
+            <td>Earth</td>
+            <td>150</td>
+            <td>12,742</td>
+            <td>1</td>
+        </tr>
+        <tr class="terrestrial">
+            <td>Mars</td>
+            <td>228</td>
+            <td>6,779</td>
+            <td>2</td>
+        </tr>
+        <tr class="gas">
+            <td>Jupiter</td>
+            <td>778</td>
+            <td>139,820</td>
+            <td>95</td>
+            <td rowspan="2">Gas Giant</td>
+        </tr>
+        <tr class="gas">
+            <td>Saturn</td>
+            <td>1,334</td>
+            <td>116,460</td>
+            <td>146</td>
+        </tr>
+        <tr class="ice">
+            <td>Uranus</td>
+            <td>2,871</td>
+            <td>50,724</td>
+            <td>27</td>
+            <td rowspan="2">Ice Giant</td>
+        </tr>
+        <tr class="ice">
+            <td>Neptune</td>
+            <td>4,495</td>
+            <td>49,244</td>
+            <td>14</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr class="footer">
+        <th colspan="5"><p>&copy;2025-Molly Corbett</p></th>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>
